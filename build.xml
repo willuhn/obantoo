@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project basedir="." default="jar" name="All">
+
+	<target name="init" description="Build-Prozess initialisieren">
+		<property name="build.dir" value="build" />
+		<property name="src.dir" value="src" />
+    <property name="classpath" value="lib/itextpdf-5.5.2.jar;lib/junit-4.11.jar;lib/jaxb-api-2.4.0-b180725.0427.jar;lib/jaxb-runtime-2.4.0-b180725.0644.jar" />
+		<property name="classes.dir" value="${build.dir}/bin" />
+		<property name="doc.dir" value="doc" />
+		<property name="javadoc.dir" value="doc/api" />
+		<property name="deploy" value="deploy" />
+    <property environment="env"/>
+    <property file="lib.props"/>
+		<property environment="env"/>
+		<property name="xjc" value="${env.JAVA_HOME}/bin/xjc.exe"/>	
+		<property name="jar.file" value="${build.dir}/obantoo-bin-${version}.jar" />
+		<property name="zip.file" value="${deploy}/obantoo-${version}.zip" />
+	</target>
+
+	<target name="compile" depends="init" description="Compilieren">
+		<mkdir dir="${classes.dir}" />
+		<javac source="1.8"
+			     classpath="${classpath}"
+			     target="1.8" 
+			     debug="true" 
+			     debuglevel="lines,vars,source" 
+			     deprecation="true" 
+			     destdir="${classes.dir}" 
+			     srcdir="${src.dir}"
+			     encoding="ISO-8859-15"
+			     includeJavaRuntime="no"
+			     includeAntRuntime="no">
+		</javac>
+		<copy todir="${classes.dir}">
+			<fileset dir="${src.dir}">
+				<include name="*.csv"/>
+				<include name="*.txt"/>
+			</fileset>
+		</copy>
+
+ 	</target>
+
+	<target name="jar" depends="init,compile" description="Jar-File erzeugen">
+		<tstamp/>
+		<jar destfile="${jar.file}">
+			<manifest>
+				<attribute name="Built-By" value="Heiner Jostkleigrewe" />
+				<attribute name="Built-Date" value="${DSTAMP}" />
+				<attribute name="Implementation-Title" value="obantoo" />
+				<attribute name="Implementation-Version" value="${version} ${TODAY}"/> 
+			</manifest>
+			<fileset dir="${classes.dir}" />
+		</jar>
+	</target>
+
+
+	<target name="javadoc" depends="jar" description="Javadoc erzeugen">
+		<mkdir dir="${javadoc.dir}" />
+
+		<javadoc destdir="${javadoc.dir}" 
+			       packagenames="*" 
+			       access="private" 
+			       encoding="ISO-8859-15">
+			<sourcepath>
+				<pathelement location="${src.dir}" />
+			</sourcepath>
+		</javadoc>
+	</target>
+	
+	<target name="deploy" depends="init,clean,jar" description="Auslieferbare ZIP-Datei erzeugen">
+		<mkdir dir="${deploy}"/>
+		<copy todir="${build.dir}/src">
+		    <fileset dir="${src.dir}"/>
+        </copy>
+		<copy todir="${build.dir}/doc">
+		    <fileset dir="${doc.dir}"/>
+        </copy>
+		<copy todir="${build.dir}" file="LGPL.txt"/>
+		<copy todir="${build.dir}" file="lib.props"/>
+		<echo message="zip ${zip.file} und ${build.dir}" />
+
+		<zip  destfile="${zip.file}" >
+			<fileset dir="${build.dir}" />
+		</zip>
+	</target>
+
+
+	<target name="clean" depends="init" description="cleanup">
+		<echo message="cleanup ${build.dir} und ${deploy}" />
+		<delete dir="${build.dir}" />
+		<delete dir="${deploy}"/>
+        <delete dir="${javadoc.dir}"/>
+	</target>
+	
+	<target name="xsd2java001" depends="init" description="Pain.001: Java aus XSD erzeugen">
+		<exec executable="${xjc}">
+		    <arg value="-d"/>
+		    <arg value="${src.dir}"/>
+		    <arg value="-p"/>
+		    <arg value="de.jost_net.OBanToo.SEPA.Nachricht.pain_001_003_03"/>
+		    <arg value="xsd/pain.001.003.03.xsd"/>
+		  </exec>
+	</target>
+
+	<target name="xsd2java008" depends="init" description="Pain.008: Java aus XSD erzeugen">
+		<exec executable="${xjc}">
+		    <arg value="-d"/>
+		    <arg value="${src.dir}"/>
+		    <arg value="-p"/>
+		    <arg value="de.jost_net.OBanToo.SEPA.Nachricht.pain_008_002_02"/>
+		    <arg value="xsd/pain.008.002.02.xsd"/>
+		  </exec>
+	</target>
+
+</project>
