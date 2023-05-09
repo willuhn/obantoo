@@ -7,7 +7,6 @@
 		<property name="src.dir" value="src" />
     <property name="classpath" value="lib/itextpdf-5.5.2.jar;lib/junit-4.11.jar;lib/jaxb-api-2.4.0-b180725.0427.jar;lib/jaxb-runtime-2.4.0-b180725.0644.jar" />
 		<property name="classes.dir" value="${build.dir}/bin" />
-		<property name="doc.dir" value="doc" />
 		<property name="javadoc.dir" value="doc/api" />
 		<property name="deploy" value="deploy" />
     <property environment="env"/>
@@ -56,7 +55,7 @@
 
 
 	<target name="javadoc" depends="jar" description="Javadoc erzeugen">
-		<mkdir dir="${javadoc.dir}" />
+		<mkdirs dir="${javadoc.dir}" />
 
 		<javadoc destdir="${javadoc.dir}" 
 			       packagenames="*" 
@@ -71,12 +70,9 @@
 	<target name="deploy" depends="init,clean,jar" description="Auslieferbare ZIP-Datei erzeugen">
 		<mkdir dir="${deploy}"/>
 		<copy todir="${build.dir}/src">
-		    <fileset dir="${src.dir}"/>
-        </copy>
-		<copy todir="${build.dir}/doc">
-		    <fileset dir="${doc.dir}"/>
-        </copy>
-		<copy todir="${build.dir}" file="LGPL.txt"/>
+      <fileset dir="${src.dir}"/>
+    </copy>
+		<copy todir="${build.dir}" file="LICENSE"/>
 		<copy todir="${build.dir}" file="lib.props"/>
 		<echo message="zip ${zip.file} und ${build.dir}" />
 
