@@ -43,7 +43,7 @@
 100500061Landesbank Berlin - E 2 -                                 10889Berlin                             Landesbank Berlin - E 2 -  51006           D1047223D000000000000100
 100500071Landesbank Berlin - E 3 -                                 10889Berlin                             Landesbank Berlin - E 3 -  51007           D4055701D000000000000100
 100500081Landesbank Berlin - E 4 -                                 10889Berlin                             Landesbank Berlin - E 4 -  51008           E2055699D000000000000100
-100500201S-Kreditpartner, Berlin                                   10715Berlin                             S-Kreditpartner, Berlin    51002SKPADEB1XXXB8055974D000000000000000
+100500201S-Kreditpartner, Berlin                                   10715Berlin                             S-Kreditpartner, Berlin    51002SKPADEB1XXXB8055974U000000000000000
 100505001LBS Ost Berlin                                            10405Berlin                             LBS Ost Berlin                  LBSODEB1BLN09046141U000000000000000
 100509991DekaBank                                                  60040Frankfurt am Main                  DekaBank                        DGZFDEFFBER09004788U000000000000000
 100601981Pax-Bank                                                  14005Berlin                             Pax-Bank Berlin            61335GENODED1PA606047622U137060193000100
@@ -3823,26 +3823,26 @@
 403400301Commerzbank                                               48402Rheine                             Commerzbank Rheine Westf   24401COBADEFFXXX13007036U000000000000503
 403400302Commerzbank                                               49461Ibbenbüren                         Commerzbank Ibbenbüren     24401           13031592U000000000000503
 403500051Stadtsparkasse Rheine                                     48410Rheine                             St Spk Rheine              54004WELADED1RHN00012070U000000000000000
-403510601Kreissparkasse Steinfurt                                  49477Ibbenbüren                         Kreissparkasse Steinfurt   54002WELADED1STF00012476M000000000000000
-403510602Kreissparkasse Steinfurt                                  49492Westerkappeln                      Kr Spk Steinfurt           54002           00012184U000000000000000
-403510602Kreissparkasse Steinfurt                                  49545Tecklenburg                        Kr Spk Steinfurt           54002           00012222U000000000000000
-403510602Kreissparkasse Steinfurt                                  48369Saerbeck                           Kr Spk Steinfurt           54002           00012225U000000000000000
-403510602Kreissparkasse Steinfurt                                  49509Recke                              Kr Spk Steinfurt           54002           00012333U000000000000000
-403510602Kreissparkasse Steinfurt                                  49497Mettingen                          Kr Spk Steinfurt           54002           00012337U000000000000000
-403510602Kreissparkasse Steinfurt                                  49549Ladbergen                          Kr Spk Steinfurt           54002           00012350U000000000000000
-403510602Kreissparkasse Steinfurt                                  48268Greven                             Kr Spk Steinfurt           54002           00012362U000000000000000
-403510602Kreissparkasse Steinfurt                                  49536Lienen                             Kr Spk Steinfurt           54002           00012380U000000000000000
-403510602Kreissparkasse Steinfurt                                  48477Hörstel                            Kr Spk Steinfurt           54002           00012385U000000000000000
-403510602Kreissparkasse Steinfurt                                  48496Hopsten                            Kr Spk Steinfurt           54002           00012390U000000000000000
-403510602Kreissparkasse Steinfurt                                  49504Lotte                              Kr Spk Steinfurt           54002           00012393U000000000000000
-403510602Kreissparkasse Steinfurt                                  48341Altenberge                         Kr Spk Steinfurt           54002           00051303U000000000000000
-403510602Kreissparkasse Steinfurt                                  48612Horstmar                           Kr Spk Steinfurt           54002           00051304U000000000000000
-403510602Kreissparkasse Steinfurt                                  48362Laer                               Kr Spk Steinfurt           54002           00051305U000000000000000
-403510602Kreissparkasse Steinfurt                                  48626Metelen                            Kr Spk Steinfurt           54002           00051306U000000000000000
-403510602Kreissparkasse Steinfurt                                  48481Neuenkirchen                       Kr Spk Steinfurt           54002           00051307U000000000000000
-403510602Kreissparkasse Steinfurt                                  48356Nordwalde                          Kr Spk Steinfurt           54002           00051308U000000000000000
-403510602Kreissparkasse Steinfurt                                  48543Steinfurt                          Kr Spk Steinfurt           54002           00051309U000000000000000
-403510602Kreissparkasse Steinfurt                                  48489Wettringen                         Kr Spk Steinfurt           54002           00051310U000000000000000
+403510601Kreissparkasse Steinfurt                                  49477Ibbenbüren                         Kreissparkasse Steinfurt   54002WELADED1STF49012476M000000000000000
+403510602Kreissparkasse Steinfurt                                  49492Westerkappeln                      Kr Spk Steinfurt           54002           49012184M000000000000000
+403510602Kreissparkasse Steinfurt                                  49545Tecklenburg                        Kr Spk Steinfurt           54002           49012222M000000000000000
+403510602Kreissparkasse Steinfurt                                  48369Saerbeck                           Kr Spk Steinfurt           54002           49012225M000000000000000
+403510602Kreissparkasse Steinfurt                                  49509Recke                              Kr Spk Steinfurt           54002           49012333M000000000000000
+403510602Kreissparkasse Steinfurt                                  49497Mettingen                          Kr Spk Steinfurt           54002           49012337M000000000000000
+403510602Kreissparkasse Steinfurt                                  49549Ladbergen                          Kr Spk Steinfurt           54002           49012350M000000000000000
+403510602Kreissparkasse Steinfurt                                  48268Greven                             Kr Spk Steinfurt           54002           49012362M000000000000000
+403510602Kreissparkasse Steinfurt                                  49536Lienen                             Kr Spk Steinfurt           54002           49012380M000000000000000
+403510602Kreissparkasse Steinfurt                                  48477Hörstel                            Kr Spk Steinfurt           54002           49012385M000000000000000
+403510602Kreissparkasse Steinfurt                                  48496Hopsten                            Kr Spk Steinfurt           54002           49012390M000000000000000
+403510602Kreissparkasse Steinfurt                                  49504Lotte                              Kr Spk Steinfurt           54002           49012393M000000000000000
+403510602Kreissparkasse Steinfurt                                  48341Altenberge                         Kr Spk Steinfurt           54002           49051303M000000000000000
+403510602Kreissparkasse Steinfurt                                  48612Horstmar                           Kr Spk Steinfurt           54002           49051304M000000000000000
+403510602Kreissparkasse Steinfurt                                  48362Laer                               Kr Spk Steinfurt           54002           49051305M000000000000000
+403510602Kreissparkasse Steinfurt                                  48626Metelen                            Kr Spk Steinfurt           54002           49051306M000000000000000
+403510602Kreissparkasse Steinfurt                                  48481Neuenkirchen                       Kr Spk Steinfurt           54002           49051307M000000000000000
+403510602Kreissparkasse Steinfurt                                  48356Nordwalde                          Kr Spk Steinfurt           54002           49051308M000000000000000
+403510602Kreissparkasse Steinfurt                                  48543Steinfurt                          Kr Spk Steinfurt           54002           49051309M000000000000000
+403510602Kreissparkasse Steinfurt                                  48489Wettringen                         Kr Spk Steinfurt           54002           49051310M000000000000000
 403512201Sparkasse Steinfurt -alt-                                 48543Steinfurt                          Sparkasse Steinfurt -alt-  54005WELADED1IBB00012466U000000000000100
 403616271Volksbank Westerkappeln-Saerbeck                          49492Westerkappeln                      VB Westerkappeln-Saerbeck  64119GENODEM1WKP34018962U000000000000000
 403616272Volksbank Westerkappeln-Saerbeck                          49504Lotte                              VB Westerkappeln-Saerbeck  64119           34018957U000000000000000
