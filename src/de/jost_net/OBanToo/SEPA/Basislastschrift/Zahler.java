@@ -299,13 +299,14 @@ public class Zahler
       verwendungszweckorig = "";
       verwendungszwecke = 1;
     }
-    else
-    {
-      verwendungszwecke++;
-    }
+    
     if (verwendungszwecke == 1)
     {
       verwendungszweck += " " + this.getBetrag();
+    }
+    if (verwendungszweck != null)
+    {
+      verwendungszwecke++;
     }
     betrag = betrag.add(zahler.getBetrag());
     if (verwendungszweck.length() == 140 && verwendungszweck.endsWith("..."))
