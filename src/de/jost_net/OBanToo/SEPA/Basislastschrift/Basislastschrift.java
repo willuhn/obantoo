@@ -187,6 +187,8 @@ public class Basislastschrift
       Zahler z = zahlermap.get(zahler.getMandatid());
       if (z == null)
       {
+    	if(zahler.getBetrag().compareTo(new BigDecimal("0.00")) == -1)
+    		throw new SEPAException("Ungültiger Betrag: " + zahler.getBetrag());
         zahlermap.put(zahler.getMandatid(), zahler);
       }
       else
@@ -196,6 +198,8 @@ public class Basislastschrift
     }
     else
     {
+      if(zahler.getBetrag().compareTo(new BigDecimal("0")) == -1)
+    	  throw new SEPAException("Ungültiger Betrag: " + zahler.getBetrag());
       zahlerarray.add(zahler);
     }
   }

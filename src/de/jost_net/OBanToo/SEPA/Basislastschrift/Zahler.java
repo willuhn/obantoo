@@ -227,7 +227,8 @@ public class Zahler
 
   public void checkBetrag(BigDecimal betrag) throws SEPAException
   {
-    if (betrag == null || betrag.compareTo(nu) == -1
+    if (betrag == null 
+    	//|| (betrag.compareTo(nu) == -1) //Negative erlauben
         || betrag.compareTo(nu) == 0)
     {
       throw new SEPAException("Ungültiger Betrag: " + betrag);
@@ -309,6 +310,8 @@ public class Zahler
       verwendungszwecke++;
     }
     betrag = betrag.add(zahler.getBetrag());
+    if(betrag.compareTo(new BigDecimal("0.00")) == -1)
+    	throw new SEPAException("Ungültiger Betrag: " + betrag);
     if (verwendungszweck.length() == 140 && verwendungszweck.endsWith("..."))
     {
       return;
