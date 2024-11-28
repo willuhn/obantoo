@@ -14,6 +14,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Date;
 
 import javax.xml.bind.JAXBException;
@@ -113,6 +114,17 @@ public class Basislastschrift2Pdf
     table.setHeaderRows(1);
 
     ArrayList<Zahler> zahler = bl.getZahler();
+    zahler.sort(new Comparator<Zahler>() {
+
+		@Override
+		public int compare(Zahler z0, Zahler z1) {
+			try {
+				return z0.getName().compareTo(z1.getName());
+			} catch (SEPAException e) {
+				return 0;
+			}
+		}
+	});
     for (Zahler z : zahler)
     {
       table.addCell(getDetailCell(z.getName(), Element.ALIGN_LEFT));
