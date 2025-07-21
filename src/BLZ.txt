@@ -4953,7 +4953,6 @@
 502209001Hauck Aufhäuser Lampe Privatbank                          60311Frankfurt am Main                  Hauck Aufhäuser Lampe Ffm  26180HAUKDEFFXXX00013584U000000000000000
 502209002Hauck Aufhäuser Lampe Privatbank                          80076München                            Hauck Aufhäuser Lampe Mün. 26180           00008538U000000000000000
 502288991FIB Frankfurt International Bank                          60329Frankfurt am Main                  FIB, Frankfurt am Main          EFIBDEFFXXX09058073U000000000000000
-502300001Arab Banking Corporation Zweigniederlassung Frankfurt     60311Frankfurt am Main                  ABC ZNL Frankfurt          29055ABCADEFFXXX00013585U000000000000000
 502306001Isbank                                                    60022Frankfurt am Main                  Isbank Frankfurt Main      29836ISBKDEFXXXX06043027U000000000000000
 502307001Metzler, B. - seel Sohn & Co                              60329Frankfurt am Main                  Bankhaus Metzler Frankfurt 26260METZDEFFXXX00013588U000000000000000
 502308001Ikano Bank                                                65205Wiesbaden                          Ikano Wiesbaden            29561PLFGDE5AXXX09055358U000000000000100
@@ -5460,7 +5459,6 @@
 512305001Standard Chartered Bank                                   60325Frankfurt am Main                  SCB Ffm                    29044SCBLDEFXXXX09043561U000000000000000
 512305021Standard Chartered Bank                                   60325Frankfurt am Main                  SCB FFM                         SCBLDEFXXXX09051173U000000000000000
 512305551Ikano Bank                                                65205Wiesbaden                          Ikano Wiesbaden                 PLFGDE5AIKB09056403U000000000000000
-512306001Europe ARAB Bank                                          60323Frankfurt am Main                  Europe ARAB Bank Frankfurt      ARABDEFFXXX09047628U000000000000000
 512500001Taunus-Sparkasse                                          61288Bad Homburg                        Taunus-Sparkasse Bad Hombg 55100HELADEF1TSK06007648U000000000000000
 512500002Taunus-Sparkasse                                          65812Bad Soden am Taunus                Taunus-Sparkasse Bad Soden 55100           06007641U000000000000000
 512500002Taunus-Sparkasse                                          65817Eppstein                           Taunus-Sparkasse Eppstein  55100           06007450U000000000000000
